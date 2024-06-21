@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+    <h2>Sample Form</h2>
+    <form action="/predict" method="post">
+        <!-- Text input -->
+        <label for="name">Pregnancies:</label><br>
+        <input type="text" id="name" name="Pregnancies"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Glucose:</label><br>
+        <input type="text" id="email" name="Glucose"><br><br>
+
+        <!-- Password input -->
+        <label for="password">BP:</label><br>
+        <input type="text" id="password" name="BloodPressure"><br><br>
+
+        <!-- Date input -->
+        <label for="dob">SkinThickness:</label><br>
+        <input type="text" id="dob" name="SkinThickness"><br><br>
+
+        <!-- Radio buttons -->
+        <label for="dob">Insulin:</label><br>
+        <input type="text" id="dob" name="Insulin"><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">BMI:</label>
+        <input type="text" id="subscribe" name="BMI" value="yes"><br><br>
+
+        <!-- Dropdown -->
+        <label for="dob">Age:</label><br>
+        <input type="text" id="dob" name="Age"><br><br>
+
+        <!-- Text area -->
+        <label for="dob">DiabetesPedigreeFunction:</label><br>
+        <input type="text" id="dob" name="DiabetesPedigreeFunction"><br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <p> {{ prediction_texts }}</p>
+</body>
+</html>
